@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>千帆聚明州</title>
+		<meta charset="utf-8" />
+		<style type="text/css">
+			/* 公用样式 */
+			
+			html,
+			body {
+				width: 100%;
+				height: 100%;
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			.banner {
+				display: flex;
+				justify-contenr: center;
+				algin-items: center;
+				height: 100%;
+				width: 100%;
+			}
+			
+			.layer {
+				position: absolute;
+				display: flex;
+				overflow-y: hidden;
+			}
+			
+			.bg2 {
+				margin-left: 120px;
+				margin-top: 40px;
+				height: 100%;
+				width: 100%;
+				top: 50%;
+				left: 50%;
+				transition: all 0.6s;
+			}
+			
+			.bg2:hover {
+				transform: scale(1.2);
+			}
+			
+			.bg3 {
+				height: 150%;
+				width: 150%;
+				margin-left: 870px;
+				margin-top: 190px;
+				top: 50%;
+				left: 50%;
+				transition: all 0.6s;
+			}
+			
+			.bg3:hover {
+				transform: scale(1.2);
+			}
+			
+			.bgz {
+				margin-left: 120px;
+				margin-top: 40px;
+				height: 100%;
+				width: 100%;
+				top: 50%;
+				left: 50%;
+				transition: all 0.6s;
+			}
+			
+			.bgz:hover {
+				transform: scale(1.2);
+			}
+			
+			.tj1 {
+				margin-left: 250px;
+				margin-top: 270px;
+				cursor: pointer;
+			}
+			
+			.tj2 {
+				margin-left: 580px;
+				margin-top: 350px;
+				cursor: pointer;
+			}
+			
+			.tj3 {
+				margin-left: 750px;
+				margin-top: 640px;
+				cursor: pointer;
+			}
+			
+			.tj3t {
+				position: absolute;
+				margin-left: 750px;
+				margin-top: 640px;
+			}
+			
+			.tj2t {
+				position: absolute;
+				margin-left: 580px;
+				margin-top: 350px;
+			}
+			
+			.tj1t {
+				position: absolute;
+				margin-left: 250px;
+				margin-top: 270px;
+			}
+			
+			.bt{
+				margin-left: 450px;
+				margin-top: 40px;
+				height: 40%;
+				width: 40%;
+
+				
+			}
+			.share {
+				position: absolute;
+				z-index: 100;
+				width: 85%;
+				height: 100%;
+				display: block;
+				opacity: 1;
+				animation: moveDiv 5s ease;
+			}
+			
+			@keyframes moveDiv {
+				from {
+					transform: scale(0.9);
+					opacity: 1;
+					margin-left: 150px;
+					margin-top: 60px;
+				}
+				to {
+					transform: scale(1);
+					opacity: 0.3;
+					margin-left: 120px;
+					margin-top: 40px;
+				}
+			}
+		</style>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$(".image_list img").click(function() {
+					$("#bg").css("./res/img/dili.png");
+					$("#bg1").css("display", "none");
+					$("#bg2").css("display", "none");
+					$("#bg3").css("display", "none");
+					$("#bg4").css("display", "none");
+				});
+			});
+		</script>
+		<script>
+				window.onload = function() {
+					var x = document.getElementsByClassName("share")[0];
+					setTimeout(function() { //定时器 
+						x.style.display = "none"; //将图片的display属性设置为none
+					}, 3000); //设置三千毫秒即3秒
+				};
+			</script>
+
+	</head>
+
+	<body>
+
+		<div class="banner">
+            
+			<div id="bg1" class="layer"><img class="bg2" src="./res/img/fade1.png" /></div>
+			<div id="bg2" class="layer"><img class="bg2" src="./res/img/fade2.png" /></div>
+			<div id="bg3" class="layer"><img class="bg3" src="./res/img/fade3.png" /></div>
+			<div id="bg4" class="layer"><img class="bt" src="./res/img/tj1.png" /></div>
+			<div id="bg" class="layer"><img class="bgz" src="./res/img/bg.png" /></div>
+			<div class="layer"><img class="tj3" src="./res/img/trade.png" /></div>
+			<div class="layer"><img class="tj2" src="./res/img/wenhua.png" /></div>
+			<div class="layer"><img class="tj1" src="./res/img/dili.png" /></div>
+			<div><img class="share" src="./res/img/share.gif" /></div>
+			<div>
+
+				<a href="index-dl.html" target="_blank"><img class=tj1t src="./res/img/dili.png" /></a>
+			</div>
+			<div>
+				<a href="index-stre.html" target="_blank"><img class=tj3t src="./res/img/trade.png" /></a>
+			</div>
+			<div>
+				<a href="index-hall.html" target="_blank"><img class=tj2t src="./res/img/wenhua.png" /></a>
+			</div>
+
+			
+
+	</body>
+
+</html>
